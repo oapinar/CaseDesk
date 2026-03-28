@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/apps/" />
+  <Folder Name="/apps/api/" />
+  <Folder Name="/apps/api/src/">
+    <Project Path="apps/api/src/CaseDesk.Api/CaseDesk.Api.csproj" />
+    <Project Path="apps/api/src/CaseDesk.Application/CaseDesk.Application.csproj" />
+    <Project Path="apps/api/src/CaseDesk.Domain/CaseDesk.Domain.csproj" />
+    <Project Path="apps/api/src/CaseDesk.Infrastructure/CaseDesk.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CaseDesk.Api.Tests/CaseDesk.Api.Tests.csproj" />
+  </Folder>
+</Solution>
