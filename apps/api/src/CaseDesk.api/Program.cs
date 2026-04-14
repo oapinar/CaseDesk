@@ -9,7 +9,8 @@ builder.Services.AddOpenApi();
 var connectionString = builder.Configuration.GetConnectionString("CaseDeskDatabase") ?? throw new InvalidOperationException("Connection string 'CaseDeskDatabase' was not found. Set it in user secrets or configuration.");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(connectionString));
+    options.UseNpgsql(connectionString)
+           .UseSnakeCaseNamingConvention());
 
 var app = builder.Build();
 
